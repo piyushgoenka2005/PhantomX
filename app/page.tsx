@@ -52,11 +52,6 @@ export default function Home() {
         <Testimonials />   
         <BlogSection />       
         <Contact />
-        {/* <Products />        */}
-        {/* <Solutions />        */}
-        {/* <Stats />         */}
-        {/* <Features />     */}
-        <Footer />
 
         {/* Cookie Consent Popup */}
         <CookieConsent

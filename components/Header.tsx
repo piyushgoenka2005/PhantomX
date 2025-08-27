@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Menu } from 'lucide-react'
+import Link from 'next/link'
 import type { HeaderProps } from '@/types'
 import { NAV_ITEMS } from '@/constants'
 
@@ -28,13 +29,13 @@ export default function Header({ isScrolled, onMobileMenuToggle }: HeaderProps) 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {NAV_ITEMS.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className="text-white hover:text-lime-400 transition-colors font-medium text-sm lg:text-base"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
 

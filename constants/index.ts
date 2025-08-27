@@ -22,8 +22,8 @@ import type {
 
 // Navigation Constants
 export const NAV_ITEMS: NavItem[] = [
-  { name: 'Products', href: '#products' },
-  { name: 'Solutions', href: '#solutions' },
+  { name: 'Products', href: '/products' },
+  { name: 'Solutions', href: '/solutions' },
   { name: 'Pricing', href: '#pricing' },
   { name: 'Resources', href: '#resources' },
   { name: 'Company', href: '#company' },

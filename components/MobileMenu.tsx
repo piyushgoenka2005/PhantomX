@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, ChevronRight, User, Shield, ArrowRight, ChevronDown } from 'lucide-react'
+import Link from 'next/link'
 import type { MobileMenuProps } from '@/types'
 import { NAV_ITEMS } from '@/constants'
 import { useState } from 'react'
@@ -161,7 +162,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                       transition={{ duration: 0.3, delay: index * 0.1 }}
                       className="group"
                     >
-                      <a
+                      <Link
                         href={item.href}
                         onClick={onClose}
                         className="flex items-center justify-between p-4 rounded-xl bg-gray-800/30 hover:bg-gray-800/60 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-200 group"
@@ -176,7 +177,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                           </div>
                         </div>
                         <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-gray-300 transition-colors" />
-                      </a>
+                      </Link>
                     </motion.div>
                   ))}
                 </nav>
