@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { useInView } from 'react-intersection-observer'
 import { ArrowRight, Calendar, Tag } from 'lucide-react'
 
@@ -82,10 +83,10 @@ export default function BlogSection() {
                 </h3>
 
                 {/* Read More Link */}
-                <button className="mt-auto text-blue-bright hover:text-blue-sky font-semibold flex items-center transition-colors">
+                <Link href="/" className="mt-auto text-blue-bright hover:text-blue-sky font-semibold flex items-center transition-colors">
                   Read more
                   <ArrowRight className="w-4 h-4 ml-2" />
-                </button>
+                </Link>
               </div>
             </motion.div>
           ))}

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ErrorBoundary, Header, MobileMenu, Hero, FeaturesSection, VideoSection, CareerSection, CommunitySection, PartnerLogos, NewsSection, Products, Solutions, Stats, Features, Testimonials, BlogSection, Footer } from '@/components'
+import { ErrorBoundary, Header, MobileMenu, Hero, FeaturesSection, VideoSection, CareerSection, CommunitySection, PartnerLogos, NewsSection, Products, Solutions, Stats, Features, Testimonials, BlogSection, Contact, Footer } from '@/components'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
 
 export default function Home() {
@@ -33,6 +33,7 @@ export default function Home() {
         <CommunitySection />       
         <Testimonials />   
         <BlogSection />       
+        <Contact />
         {/* <Products />        */}
         {/* <Solutions />        */}
         {/* <Stats />         */}

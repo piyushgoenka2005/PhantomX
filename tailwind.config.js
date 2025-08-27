@@ -15,10 +15,17 @@ module.exports = {
           cerulean: '#93c5fd',  // Lighter, more pastel cerulean blue
           pale: '#dbeafe',      // Very pale, almost lavender-tinged light blue
         },
+        // Remap greens/limes to blue palette to make entire site blue-toned
         lime: {
-          400: '#a3e635',
-          500: '#84cc16',       // Vibrant lime green from the image
-          600: '#65a30d',
+          400: '#60a5fa', // blue.sky
+          500: '#3b82f6', // blue.bright
+          600: '#1e3a8a', // blue.deep
+        },
+        green: {
+          100: '#dbeafe', // blue.pale
+          400: '#60a5fa', // blue.sky
+          500: '#3b82f6', // blue.bright
+          800: '#1e3a8a', // blue.deep
         }
       },
       fontFamily: {

@@ -27,19 +27,19 @@ export default function NewsSection() {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <div className="bg-[#1a2b0a] text-white font-sans p-8 sm:p-12 rounded-2xl max-w-6xl my-10 shadow-lg">
+            <div className="bg-[#0b1530] text-white font-sans p-8 sm:p-12 rounded-2xl max-w-6xl my-10 shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 {/* Left Column: Contains the news tag and the main heading */}
                 <div className="flex flex-col gap-6">
                   {/* "LATEST NEWS" Tag */}
                   <div className="self-start">
-                    <span className="bg-[#3a5a1a] text-[#a7e84a] text-sm font-bold px-4 py-2 rounded-full">
+                    <span className="bg-[#1e3a8a] text-[#93c5fd] text-sm font-bold px-4 py-2 rounded-full">
                       LATEST NEWS
                     </span>
                   </div>
 
                   {/* Main Heading */}
-                  <h1 className="text-4xl lg:text-5xl text-[#c5ff68] leading-tight">
+                  <h1 className="text-4xl lg:text-5xl text-[#dbeafe] leading-tight">
                     Hack The Box launches MCP: a new era of AI-driven
                     cybersecurity readiness
                   </h1>
@@ -51,7 +51,7 @@ export default function NewsSection() {
                   <p className="text-gray-300 text-base leading-relaxed md:w-2/3">
                     To meet the growing demand for AI-literate professionals,
                     Hack The Box released a{" "}
-                    <span className="font-bold text-[#c5ff68]">
+                    <span className="font-bold text-[#dbeafe]">
                       Model Context Protocol (MCP)
                     </span>{" "}
                     that integrates AI copilots into hands-on labs. From
@@ -63,12 +63,12 @@ export default function NewsSection() {
                   {/* Image Section */}
                   <div className="md:w-1/3 flex-shrink-0">
                     <img
-                      src="https://placehold.co/300x300/1a1a1a/c5ff68?text=AI+Security"
+                      src="https://placehold.co/300x300/1a1a1a/dbeafe?text=AI+Security"
                       alt="AI Cybersecurity Graphic"
-                      className="rounded-2xl w-full h-auto object-cover shadow-2xl shadow-[#c5ff68]/20"
+                      className="rounded-2xl w-full h-auto object-cover shadow-2xl shadow-[#3b82f6]/20"
                       onError={(e) => {
                         e.currentTarget.src =
-                          "https://placehold.co/300x300/1a1a1a/c5ff68?text=Image+Error";
+                          "https://placehold.co/300x300/1a1a1a/dbeafe?text=Image+Error";
                         e.currentTarget.onerror = null;
                       }}
                     />
@@ -114,23 +114,23 @@ export default function NewsSection() {
               >
                 <path
                   d="M0,80 L30,60 L60,70 L90,40 L120,50 L150,30 L180,45 L210,25 L240,35 L270,20 L300,15"
-                  stroke="#84cc16"
+                  stroke="#3b82f6"
                   strokeWidth="3"
                   fill="none"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 {/* Graph dots */}
-                <circle cx="30" cy="60" r="3" fill="#84cc16" />
-                <circle cx="60" cy="70" r="3" fill="#84cc16" />
-                <circle cx="90" cy="40" r="3" fill="#84cc16" />
-                <circle cx="120" cy="50" r="3" fill="#84cc16" />
-                <circle cx="150" cy="30" r="3" fill="#84cc16" />
-                <circle cx="180" cy="45" r="3" fill="#84cc16" />
-                <circle cx="210" cy="25" r="3" fill="#84cc16" />
-                <circle cx="240" cy="35" r="3" fill="#84cc16" />
-                <circle cx="270" cy="20" r="3" fill="#84cc16" />
-                <circle cx="300" cy="15" r="3" fill="#84cc16" />
+                <circle cx="30" cy="60" r="3" fill="#3b82f6" />
+                <circle cx="60" cy="70" r="3" fill="#3b82f6" />
+                <circle cx="90" cy="40" r="3" fill="#3b82f6" />
+                <circle cx="120" cy="50" r="3" fill="#3b82f6" />
+                <circle cx="150" cy="30" r="3" fill="#3b82f6" />
+                <circle cx="180" cy="45" r="3" fill="#3b82f6" />
+                <circle cx="210" cy="25" r="3" fill="#3b82f6" />
+                <circle cx="240" cy="35" r="3" fill="#3b82f6" />
+                <circle cx="270" cy="20" r="3" fill="#3b82f6" />
+                <circle cx="300" cy="15" r="3" fill="#3b82f6" />
               </svg>
             </div>
           </div>

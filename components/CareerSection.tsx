@@ -61,7 +61,7 @@ export default function CareerSection() {
                 {/* Left side: Available Candidates */}
                 <div className="flex-1">
                   <h3 className="text-gray-400 text-sm">Available candidates</h3>
-                  <p className="text-7xl font-bold text-[#c5ff68] mt-4">870k+</p>
+                  <p className="text-7xl font-bold text-[#3b82f6] mt-4">870k+</p>
                 </div>
                 {/* Right side: Onboarding & Retention */}
                 <div className="flex-1">
