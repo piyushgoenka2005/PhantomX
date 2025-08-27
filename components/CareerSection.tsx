@@ -18,13 +18,14 @@ export default function CareerSection() {
 ];
 
   return (
-    <section className="py-20 bg-gray-900">
+    <section className="py-12 sm:py-20 bg-gray-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
+          className="mb-12 sm:mb-16"
         >
           {/* Hero Section */}
           <div className="mb-12">
@@ -104,7 +105,7 @@ export default function CareerSection() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="bg-[#1a1f2c] rounded-xl p-8"
             >
-              <h3 className="text-gray-400 text-sm mb-6">Companies hiring on Hack The Box</h3>
+              <h3 className="text-gray-400 text-sm mb-6">Companies hiring on PhantomX</h3>
               <div className="flex flex-wrap items-center justify-around gap-8">
                 {logos.map((logo, index) => (
                   <motion.img

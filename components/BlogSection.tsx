@@ -20,7 +20,7 @@ export default function BlogSection() {
       image: "AI"
     },
     {
-      title: "From bug bounty to broader impact: Introducing the Certified Web Exploitation Specialist (HTB CWES)",
+      title: "From bug bounty to broader impact: Introducing the Certified Web Exploitation Specialist (PhantomX CWES)",
       category: "Red Teaming",
       date: "2025",
       excerpt: "Discover our new certification program designed to bridge the gap between bug bounty skills and professional red teaming.",
@@ -36,14 +36,14 @@ export default function BlogSection() {
   ];
 
   return (
-    <section className="py-20 bg-gray-900">
+    <section className="py-12 sm:py-20 bg-gray-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="mb-16"
+          className="mb-12 sm:mb-16"
         >
           <h2 className="text-2xl md:text-5xl font-bold text-white mb-6">
             Latest from our blog

@@ -7,20 +7,20 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jet
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://phantomx-htb-clone.vercel.app'),
-  title: 'Hack The Box Clone',
-  description: 'A responsive and functional clone of the Hack The Box website built with Next.js and Tailwind CSS, featuring a cybersecurity theme.',
-  keywords: ['Hack The Box', 'cybersecurity', 'Next.js', 'Tailwind CSS', 'Framer Motion', 'React', 'TypeScript', 'responsive design'],
-  openGraph: {
-    title: 'Hack The Box Clone',
-    description: 'A responsive and functional clone of the Hack The Box website built with Next.js and Tailwind CSS, featuring a cybersecurity theme.',
-    url: 'https://phantomx-htb-clone.vercel.app',
-    siteName: 'Hack The Box Clone',
+  title: 'PhantomX - Cybersecurity Platform',
+  description: 'A responsive and functional cybersecurity platform built with Next.js and Tailwind CSS, featuring advanced security solutions.',
+  keywords: ['PhantomX', 'cybersecurity', 'Next.js', 'Tailwind CSS', 'Framer Motion', 'React', 'TypeScript', 'responsive design'],
+      openGraph: {
+      title: 'PhantomX - Cybersecurity Platform',
+      description: 'A responsive and functional cybersecurity platform built with Next.js and Tailwind CSS, featuring advanced security solutions.',
+      url: 'https://phantomx-htb-clone.vercel.app',
+      siteName: 'PhantomX',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/logo.jpg',
         width: 1200,
         height: 630,
-        alt: 'Hack The Box Clone',
+        alt: 'PhantomX',
       },
     ],
     locale: 'en_US',
@@ -28,10 +28,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hack The Box Clone',
-    description: 'A responsive and functional clone of the Hack The Box website built with Next.js and Tailwind CSS, featuring a cybersecurity theme.',
+    title: 'PhantomX - Cybersecurity Platform',
+    description: 'A responsive and functional cybersecurity platform built with Next.js and Tailwind CSS, featuring advanced security solutions.',
     creator: '@yourtwitterhandle',
-    images: ['/twitter-image.jpg'],
+    images: ['/logo.jpg'],
   },
   robots: {
     index: true,
@@ -52,9 +52,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="min-h-screen bg-gray-900">
+    <html lang="en" className="overflow-x-hidden">
+      <body className={`${inter.className} overflow-x-hidden`}>
+        <div className="min-h-screen bg-gray-900 overflow-x-hidden">
           {children}
         </div>
       </body>

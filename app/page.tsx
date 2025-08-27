@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <ErrorBoundary>
-      <main className="min-h-screen">
+      <main className="min-h-screen overflow-x-hidden">
         <Header 
           isScrolled={isScrolled} 
           onMobileMenuToggle={handleMobileMenuToggle} 
@@ -34,10 +34,6 @@ export default function Home() {
         <Testimonials />   
         <BlogSection />       
         <Contact />
-        {/* <Products />        */}
-        {/* <Solutions />        */}
-        {/* <Stats />         */}
-        {/* <Features />     */}
         <Footer />
       </main>
     </ErrorBoundary>

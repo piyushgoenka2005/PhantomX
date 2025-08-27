@@ -1,6 +1,6 @@
-# Hack The Box Clone - Professional Next.js Cybersecurity Platform
+# PhantomX - Professional Next.js Cybersecurity Platform
 
-A fully responsive and professional-grade clone of the Hack The Box website built with Next.js 14, TypeScript, Tailwind CSS, and Framer Motion. This project demonstrates enterprise-level code structure, scalability, and modern web development best practices.
+A fully responsive and professional-grade cybersecurity platform built with Next.js 14, TypeScript, Tailwind CSS, and Framer Motion. This project demonstrates enterprise-level code structure, scalability, and modern web development best practices.
 
 ## 🏗️ **Professional Architecture**
 
@@ -315,7 +315,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 **Acknowledgments**
 
-- **Hack The Box** - Original design inspiration
+- **PhantomX** - Cybersecurity platform design
 - **Next.js Team** - Excellent framework
 - **Tailwind CSS** - Utility-first CSS framework
 - **Framer Motion** - Animation library

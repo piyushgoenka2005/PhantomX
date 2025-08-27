@@ -11,46 +11,47 @@ export default function NewsSection() {
   });
 
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <section className="py-12 sm:py-20 bg-gray-900 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main News Content */}
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
+          className="mb-12 sm:mb-16"
         >
           {/* Combined News Panel - Clickable Link */}
           <motion.a
             href="#news"
-            className="block rounded-2xl relative overflow-hidden cursor-pointer"
-            whileHover={{ scale: 1.05 }}
+            className="block rounded-xl sm:rounded-2xl relative overflow-hidden cursor-pointer"
+            whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <div className="bg-[#0b1530] text-white font-sans p-8 sm:p-12 rounded-2xl max-w-6xl my-10 shadow-lg">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="bg-[#0b1530] text-white font-sans p-6 sm:p-8 lg:p-12 rounded-xl sm:rounded-2xl max-w-6xl mx-auto my-6 sm:my-10 shadow-lg">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center">
                 {/* Left Column: Contains the news tag and the main heading */}
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-4 sm:gap-6">
                   {/* "LATEST NEWS" Tag */}
                   <div className="self-start">
-                    <span className="bg-[#1e3a8a] text-[#93c5fd] text-sm font-bold px-4 py-2 rounded-full">
+                    <span className="bg-[#1e3a8a] text-[#93c5fd] text-xs sm:text-sm font-bold px-3 sm:px-4 py-1.5 sm:py-2 rounded-full">
                       LATEST NEWS
                     </span>
                   </div>
 
                   {/* Main Heading */}
-                  <h1 className="text-4xl lg:text-5xl text-[#dbeafe] leading-tight">
-                    Hack The Box launches MCP: a new era of AI-driven
+                  <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-[#dbeafe] leading-tight">
+                    PhantomX launches MCP: a new era of AI-driven
                     cybersecurity readiness
                   </h1>
                 </div>
 
                 {/* Right Column: Contains the descriptive paragraph and the image */}
-                <div className="flex flex-col md:flex-row gap-8 items-center">
+                <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 items-center">
                   {/* Description Paragraph */}
-                  <p className="text-gray-300 text-base leading-relaxed md:w-2/3">
+                  <p className="text-gray-300 text-sm sm:text-base leading-relaxed lg:w-2/3">
                     To meet the growing demand for AI-literate professionals,
-                    Hack The Box released a{" "}
+                    PhantomX released a{" "}
                     <span className="font-bold text-[#dbeafe]">
                       Model Context Protocol (MCP)
                     </span>{" "}
@@ -61,11 +62,11 @@ export default function NewsSection() {
                   </p>
 
                   {/* Image Section */}
-                  <div className="md:w-1/3 flex-shrink-0">
+                  <div className="lg:w-1/3 flex-shrink-0">
                     <img
                       src="https://placehold.co/300x300/1a1a1a/dbeafe?text=AI+Security"
                       alt="AI Cybersecurity Graphic"
-                      className="rounded-2xl w-full h-auto object-cover shadow-2xl shadow-[#3b82f6]/20"
+                      className="rounded-xl sm:rounded-2xl w-full h-auto object-cover shadow-2xl shadow-[#3b82f6]/20"
                       onError={(e) => {
                         e.currentTarget.src =
                           "https://placehold.co/300x300/1a1a1a/dbeafe?text=Image+Error";
@@ -84,29 +85,29 @@ export default function NewsSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8"
         >
           {/* Left Panel - Statistic */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
-            <div className="text-6xl md:text-7xl font-extrabold text-lime-400 mb-4">
+          <div className="bg-gray-800 rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-gray-700">
+            <div className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-lime-400 mb-4">
               50%
             </div>
-            <p className="text-white text-3xl leading-relaxed">
+            <p className="text-white text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               and more of significant cyber incidents are caused by a lack of
               skills or human failure.
             </p>
           </div>
 
           {/* Right Panel - Call to Action with Graph */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
+          <div className="bg-gray-800 rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-gray-700">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-6">
               Beat the odds.
               <br />
               Optimize your performance.
             </h3>
 
             {/* Lime Green Line Graph */}
-            <div className="relative h-32 bg-gray-700 rounded-lg p-4">
+            <div className="relative h-24 sm:h-32 bg-gray-700 rounded-lg p-4">
               <svg
                 className="w-full h-full"
                 viewBox="0 0 300 100"
@@ -138,12 +139,12 @@ export default function NewsSection() {
       </div>
 
       {/* Bottom Sticky Feedback Element */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <div className="bg-lime-500 text-green-900 px-4 py-3 rounded-lg shadow-lg flex items-center space-x-2 cursor-pointer hover:bg-lime-400 transition-colors">
-          <span className="text-sm font-medium">
+      <div className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-50">
+        <div className="bg-lime-500 text-green-900 px-3 sm:px-4 py-2 sm:py-3 rounded-lg shadow-lg flex items-center space-x-2 cursor-pointer hover:bg-lime-400 transition-colors">
+          <span className="text-xs sm:text-sm font-medium">
             How likely are you to recomme...
           </span>
-          <ArrowUp className="w-4 h-4" />
+          <ArrowUp className="w-3 h-3 sm:w-4 sm:h-4" />
         </div>
       </div>
     </section>

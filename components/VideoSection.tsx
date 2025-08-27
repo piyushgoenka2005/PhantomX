@@ -11,8 +11,8 @@ export default function VideoSection() {
   });
 
   return (
-    <section className="py-20 bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section className="py-12 sm:py-20 bg-gray-900 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <motion.div
           ref={ref}
@@ -145,7 +145,7 @@ export default function VideoSection() {
               </div>
             </motion.div>
 
-            {/* Right Card: Why Hack The Box? */}
+            {/* Right Card: Why PhantomX? */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -160,7 +160,7 @@ export default function VideoSection() {
               {/* Content */}
               <div className="space-y-4">
                 <div className="text-gray-400 text-sm font-medium">
-                  Why Hack The Box?
+                  Why PhantomX?
                 </div>
                 
                 {/* Book Icon */}

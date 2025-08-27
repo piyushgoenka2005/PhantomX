@@ -18,22 +18,20 @@ export default function Header({ isScrolled, onMobileMenuToggle }: HeaderProps) 
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-lime-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">HTB</span>
-            </div>
-            <span className="text-white font-bold text-xl">HACK<span className='font-normal'>THE</span>BOX</span>
+          <div className="flex items-center space-x-2 sm:space-x-3">
+            <img src="/logo.jpg" alt="PhantomX Logo" className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl object-cover shadow-sm" />
+            <span className="text-white font-bold text-lg sm:text-xl">PhantomX</span>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-white hover:text-lime-400 transition-colors font-medium"
+                className="text-white hover:text-lime-400 transition-colors font-medium text-sm lg:text-base"
               >
                 {item.name}
               </a>
@@ -41,16 +39,16 @@ export default function Header({ isScrolled, onMobileMenuToggle }: HeaderProps) 
           </nav>
 
           {/* Desktop CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-3 lg:space-x-4">
             <a
               href="#login"
-              className="text-white hover:text-lime-400 transition-colors font-medium"
+              className="text-white hover:text-lime-400 transition-colors font-medium text-sm lg:text-base"
             >
               Login
             </a>
             <a
               href="#get-started"
-              className="bg-lime-500 hover:bg-lime-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors flex items-center"
+              className="bg-lime-500 hover:bg-lime-600 text-white px-4 lg:px-6 py-2 rounded-lg font-semibold transition-colors flex items-center text-sm lg:text-base"
             >
               Get Started
             </a>
@@ -59,10 +57,10 @@ export default function Header({ isScrolled, onMobileMenuToggle }: HeaderProps) 
           {/* Mobile Menu Button */}
           <button
             onClick={onMobileMenuToggle}
-            className="md:hidden text-white hover:text-lime-400 transition-colors"
+            className="md:hidden p-2 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 text-white hover:text-lime-400 transition-all duration-200"
             aria-label="Open mobile menu"
           >
-            <Menu className="w-6 h-6" />
+            <Menu className="w-5 h-5" />
           </button>
         </div>
       </div>

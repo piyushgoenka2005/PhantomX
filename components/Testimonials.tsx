@@ -36,7 +36,7 @@ export default function Testimonials() {
   const handleNext = () => setStartIdx((i) => Math.min(maxStart, i + 1))
 
   return (
-    <section className="py-20 bg-gray-900">
+    <section className="py-20 bg-gray-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -60,7 +60,7 @@ export default function Testimonials() {
           </div>
         </motion.div>
 
-        <div className="overflow-hidden -mx-4">
+        <div className="overflow-hidden">
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: `-${startIdx * (100 / slidesPerView)}%` }}

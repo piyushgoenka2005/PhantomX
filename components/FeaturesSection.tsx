@@ -12,17 +12,17 @@ export default function FeaturesSection() {
   });
 
   return (
-    <section className="py-20 bg-gray-900">
-      <div className="max-w-7xl mx-14 px-4 sm:px-6 lg:px-8 mx-auto">
+    <section className="py-12 sm:py-20 bg-gray-900 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="mb-16"
+          className="mb-12 sm:mb-16"
         >
-          <h1 className="text-xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+          <h1 className="text-xl md:text-5xl lg:text-4xl font-bold text-white mb-8 leading-tight">
             Gamified, hands-on upskilling from
             <br />
             cybersecurity fundamentals to advanced scenarios.

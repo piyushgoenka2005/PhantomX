@@ -28,7 +28,7 @@ export default function PartnerLogos() {
   const duplicatedPartners = [...PARTNERS, ...PARTNERS];
 
   return (
-    <section className="py-16 bg-gray-900 border-t border-gray-800">
+    <section className="py-16 bg-gray-900 border-t border-gray-800 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden">
           {/* Sliding container */}
