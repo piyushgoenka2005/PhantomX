@@ -42,9 +42,9 @@ export default function BlogSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-2xl md:text-5xl font-bold text-white mb-6">
             Latest from our blog
           </h2>
         </motion.div>
@@ -56,14 +56,14 @@ export default function BlogSection() {
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden hover:border-blue-bright/50 transition-all duration-300"
+              className="bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden hover:border-blue-bright/50 transition-all duration-300 h-full flex flex-col"
             >
               {/* Image Placeholder */}
               <div className="h-48 bg-gradient-to-br from-blue-bright/20 to-blue-sky/20 flex items-center justify-center">
                 <div className="text-blue-bright font-bold text-lg">{post.image}</div>
               </div>
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 {/* Category and Date */}
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center text-blue-cerulean text-sm">
@@ -81,13 +81,8 @@ export default function BlogSection() {
                   {post.title}
                 </h3>
 
-                {/* Excerpt */}
-                <p className="text-blue-cerulean mb-4 leading-relaxed">
-                  {post.excerpt}
-                </p>
-
                 {/* Read More Link */}
-                <button className="text-blue-bright hover:text-blue-sky font-semibold flex items-center transition-colors">
+                <button className="mt-auto text-blue-bright hover:text-blue-sky font-semibold flex items-center transition-colors">
                   Read more
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </button>

@@ -31,12 +31,12 @@ export default function Home() {
         <VideoSection />         
         <CareerSection />        
         <CommunitySection />       
-        <Testimonials />          
+        <Testimonials />   
+        <BlogSection />       
         {/* <Products />        */}
         {/* <Solutions />        */}
         {/* <Stats />         */}
         {/* <Features />     */}
-        {/* <BlogSection /> */}
         <Footer />
       </main>
     </ErrorBoundary>
