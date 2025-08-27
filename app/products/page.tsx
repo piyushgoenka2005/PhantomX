@@ -26,8 +26,6 @@ export default function ProductsPage() {
       <div className="pt-16">
         <Products />
       </div>
-      
-      <Footer />
     </main>
   )
 }

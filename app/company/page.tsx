@@ -1,10 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import { Solutions, Header, MobileMenu, Footer } from '@/components'
+import { Header, MobileMenu, AboutContent } from '@/components'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
 
-export default function SolutionsPage() {
+export default function AboutPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { isScrolled } = useScrollPosition()
 
@@ -24,7 +24,7 @@ export default function SolutionsPage() {
       />
 
       <div className="pt-16">
-        <Solutions />
+        <AboutContent />
       </div>
     </main>
   )

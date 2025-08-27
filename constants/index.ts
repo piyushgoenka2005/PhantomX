@@ -26,7 +26,7 @@ export const NAV_ITEMS: NavItem[] = [
   { name: 'Solutions', href: '/solutions' },
   { name: 'Pricing', href: '#pricing' },
   { name: 'Resources', href: '#resources' },
-  { name: 'Company', href: '#company' },
+  { name: 'Company', href: '/company' },
   { name: 'Business', href: '#business' }
 ];
 
