@@ -30,12 +30,12 @@ export default function Home() {
         <FeaturesSection />        
         <VideoSection />         
         <CareerSection />        
-        {/* <CommunitySection />           */}
+        <CommunitySection />       
+        <Testimonials />          
         {/* <Products />        */}
         {/* <Solutions />        */}
         {/* <Stats />         */}
         {/* <Features />     */}
-        {/* <Testimonials />        */}
         {/* <BlogSection /> */}
         <Footer />
       </main>

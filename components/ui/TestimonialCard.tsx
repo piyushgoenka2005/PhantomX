@@ -11,16 +11,16 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
   return (
     <motion.div
       {...ANIMATION_CONFIGS.fadeIn}
-      className="bg-gray-800/50 border border-gray-700 rounded-xl p-8 hover:border-blue-500/50 transition-all duration-300 group"
+      className="bg-gray-800/50 border border-gray-700 rounded-xl p-8 hover:border-blue-500/50 transition-all duration-300 group h-full flex flex-col"
     >
-      <div className="mb-6">
+      <div className="mb-8 flex-1">
         <Quote className="w-8 h-8 text-blue-400 mb-4" />
         <blockquote className="text-gray-300 leading-relaxed italic">
           "{quote}"
         </blockquote>
       </div>
 
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-4 mt-2">
         <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
           <span className="text-blue-400 font-semibold text-lg">
             {author.charAt(0)}
