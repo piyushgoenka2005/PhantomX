@@ -136,7 +136,7 @@ export default function VideoSection() {
                 <div className="text-gray-400 text-sm font-medium">
                   Case study
                 </div>
-                <h3 className="text-3xl font-bold text-white">
+                <h3 className="text-3xl font-bold text-white pt-5 pb-6">
                   TOYOTA
                 </h3>
                 <p className="text-white/80 leading-relaxed">
@@ -164,7 +164,7 @@ export default function VideoSection() {
                 </div>
                 
                 {/* Book Icon */}
-                <div className="flex justify-center py-4">
+                <div className="flex py-4">
                   <div className="w-12 h-12 bg-gray-700 rounded-lg flex items-center justify-center">
                     <Book className="w-6 h-6 text-white" />
                   </div>

@@ -29,15 +29,14 @@ export default function Home() {
         <NewsSection />
         <FeaturesSection />        
         <VideoSection />         
-        {/*<CareerSection />        
-        <CommunitySection />          
-                
-        <Products />       
-        <Solutions />       
-        <Stats />        
-        <Features />    
-        <Testimonials />       
-        <BlogSection /> */}
+        <CareerSection />        
+        {/* <CommunitySection />           */}
+        {/* <Products />        */}
+        {/* <Solutions />        */}
+        {/* <Stats />         */}
+        {/* <Features />     */}
+        {/* <Testimonials />        */}
+        {/* <BlogSection /> */}
         <Footer />
       </main>
     </ErrorBoundary>
