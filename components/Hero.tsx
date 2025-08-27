@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import { ArrowRight, Play } from 'lucide-react'
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { ArrowRight, Play } from "lucide-react";
 
 export default function Hero() {
   const { ref, inView } = useInView({
@@ -22,11 +22,11 @@ export default function Hero() {
       >
         <source src="/background.mp4" type="video/mp4" />
       </video>
-      
+
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-900/70"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-14 px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
@@ -41,9 +41,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight pt-20"
           >
-            The #1 platform to build{' '}
-            <span className="blue-gradient">attack-ready</span>{' '}
-            teams and organizations
+            The #1 platform to build{" "}
+            <span className="blue-gradient">attack-ready</span> teams and
+            organizations
           </motion.h1>
 
           {/* Subtitle */}
@@ -53,8 +53,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-blue-cerulean mb-8 leading-relaxed"
           >
-            Maximum curriculum management flexibility, enhanced skills reporting, and engaging gamification features. 
-            Book a demo to see Hack The Box in action.
+            Maximum curriculum management flexibility, enhanced skills
+            reporting, and engaging gamification features. Book a demo to see
+            Hack The Box in action.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -92,5 +93,5 @@ export default function Hero() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

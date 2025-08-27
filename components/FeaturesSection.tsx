@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import { ArrowRight } from 'lucide-react'
-import { FEATURE_SECTIONS } from '@/constants'
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { ArrowRight } from "lucide-react";
+import { FEATURE_SECTIONS } from "@/constants";
 
 export default function FeaturesSection() {
   const { ref, inView } = useInView({
@@ -13,7 +13,7 @@ export default function FeaturesSection() {
 
   return (
     <section className="py-20 bg-gray-900">
-      <div className="max-w-7xl mx-14 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-14 px-4 sm:px-6 lg:px-8 mx-auto">
         {/* Hero Section */}
         <motion.div
           ref={ref}
@@ -23,10 +23,11 @@ export default function FeaturesSection() {
           className="mb-16"
         >
           <h1 className="text-xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-            Gamified, hands-on upskilling from<br />
+            Gamified, hands-on upskilling from
+            <br />
             cybersecurity fundamentals to advanced scenarios.
           </h1>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <button className="bg-lime-500 hover:bg-lime-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center">
               Get started
@@ -43,7 +44,7 @@ export default function FeaturesSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-8 justify-items-center"
         >
           {FEATURE_SECTIONS.map((feature, index) => (
             <motion.div
@@ -51,10 +52,10 @@ export default function FeaturesSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 * index }}
-              className="bg-gray-800/50 border border-gray-700 rounded-xl p-8 hover:border-blue-500/50 transition-all duration-300 group"
+              className="bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 group w-full max-w-sm"
             >
               {/* Character Avatar */}
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-4">
                 <div>
                   <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
                     {feature.title}
@@ -66,18 +67,22 @@ export default function FeaturesSection() {
               </div>
 
               {/* Description */}
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <p className="text-gray-300 mb-4 leading-relaxed">
                 {feature.description}
               </p>
 
-              {/* Interactive Element */}
-              <div className="p-4">
-                <img src="/image.png" alt="" className="w-full h-full object-cover" />
+              {/* Image */}
+              <div className="p-2">
+                <img
+                  src="/image.png"
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
           ))}
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
