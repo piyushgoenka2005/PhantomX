@@ -123,14 +123,6 @@ export default function CareerSection() {
           </motion.div>
         </motion.div>
       </div>
-
-      {/* Feedback Button */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <button className="bg-lime-500 hover:bg-lime-600 text-white px-4 py-3 rounded-lg shadow-lg flex items-center space-x-2 transition-colors">
-          <span className="text-sm font-medium">How likely are you to recomme...</span>
-          <ArrowUpRight className="w-4 h-4" />
-        </button>
-      </div>
     </section>
   )
 }

@@ -1,12 +1,10 @@
 'use client'
 
 import { motion, AnimatePresence } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 import { ArrowRight, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Footer() {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
 
   const toggleSection = (section: string) => {
@@ -170,14 +168,12 @@ export default function Footer() {
 
   return (
     <footer className="bg-transparent overflow-hidden">
-      {/* Mobile Footer */}
-      <div className="md:hidden">
+      {/* Mobile Footer - Always Visible */}
+      <div className="block md:hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-5 py-6">
           <motion.div
-            ref={ref}
-            initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
-            variants={fadeUp}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="bg-gray-900 border border-gray-700 rounded-xl p-6 overflow-hidden"
           >
@@ -337,16 +333,14 @@ export default function Footer() {
       <div className="hidden md:block">
         <div className="max-w-6xl mx-auto my-6 px-4 sm:px-5 lg:px-6">
           <motion.div
-            ref={ref}
-            initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
-            variants={fadeUp}
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="bg-gray-900 border border-gray-700 rounded-xl sm:rounded-2xl p-6 sm:p-8 max-h-screen overflow-auto overflow-x-hidden"
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 lg:gap-8">
               {/* Left brand and badges */}
-              <motion.div variants={fadeUp} transition={{ duration: 0.6, delay: 0.05 }} className="sm:col-span-2 lg:col-span-2">
+              <motion.div variants={{}} transition={{ duration: 0.6, delay: 0.05 }} className="sm:col-span-2 lg:col-span-2">
                 <div className="flex items-center mb-4">
                   <img src="/logo.jpg" alt="PhantomX Logo" className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg object-cover mr-3" />
                   <span className="text-white font-bold text-base sm:text-lg">PhantomX</span>
@@ -366,7 +360,7 @@ export default function Footer() {
               </motion.div>
 
               {/* Products */}
-              <motion.div variants={fadeUp} transition={{ duration: 0.6, delay: 0.1 }} className="lg:col-span-1">
+              <motion.div variants={{}} transition={{ duration: 0.6, delay: 0.1 }} className="lg:col-span-1">
                 <h3 className="text-white font-semibold text-sm mb-3">Products</h3>
                 <ul className="space-y-1.5 text-xs text-blue-cerulean">
                   {links.products.map((name) => (
@@ -376,7 +370,7 @@ export default function Footer() {
               </motion.div>
 
               {/* Solutions */}
-              <motion.div variants={fadeUp} transition={{ duration: 0.6, delay: 0.15 }} className="lg:col-span-1">
+              <motion.div variants={{}} transition={{ duration: 0.6, delay: 0.15 }} className="lg:col-span-1">
                 <h3 className="text-white font-semibold text-sm mb-3">Solutions</h3>
                 <ul className="space-y-1.5 text-xs text-blue-cerulean mb-4">
                   {links.solutions.map((name) => (
@@ -404,7 +398,7 @@ export default function Footer() {
               </motion.div>
 
               {/* Resources */}
-              <motion.div variants={fadeUp} transition={{ duration: 0.6, delay: 0.2 }} className="lg:col-span-1">
+              <motion.div variants={{}} transition={{ duration: 0.6, delay: 0.2 }} className="lg:col-span-1">
                 <h3 className="text-white font-semibold text-sm mb-3">Resources</h3>
                 <ul className="space-y-1.5 text-xs text-blue-cerulean">
                   {links.resources.map((name) => (
@@ -414,7 +408,7 @@ export default function Footer() {
               </motion.div>
 
               {/* Company & Contact */}
-              <motion.div variants={fadeUp} transition={{ duration: 0.6, delay: 0.25 }} className="lg:col-span-1">
+              <motion.div variants={{}} transition={{ duration: 0.6, delay: 0.25 }} className="lg:col-span-1">
                 <h3 className="text-white font-semibold text-sm mb-3">Company</h3>
                 <ul className="space-y-1.5 text-xs text-blue-cerulean mb-4">
                   {links.company.map((name) => (
@@ -450,7 +444,7 @@ export default function Footer() {
 
             {/* Bottom bar */}
             <motion.div
-              variants={fadeUp}
+              variants={{}}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="mt-6 sm:mt-8 pt-4 sm:pt-5 border-t border-gray-700 flex flex-col sm:flex-row items-center justify-between gap-4"
             >

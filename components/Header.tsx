@@ -22,7 +22,7 @@ export default function Header({ isScrolled, onMobileMenuToggle }: HeaderProps) 
           {/* Logo */}
           <div className="flex items-center space-x-2 sm:space-x-3">
             <img src="/logo.jpg" alt="PhantomX Logo" className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl object-cover shadow-sm" />
-            <span className="text-white font-bold text-lg sm:text-xl">PhantomX</span>
+            <span className="text-white font-bold text-lg sm:text-xl"><span className='text-blue'>Phan</span>tomX</span>
           </div>
 
           {/* Desktop Navigation */}
