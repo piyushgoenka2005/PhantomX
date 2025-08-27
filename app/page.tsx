@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ErrorBoundary, Header, MobileMenu, Hero, FeaturesSection, VideoSection, CareerSection, CommunitySection, PartnerLogos, NewsSection, Products, Solutions, Stats, Features, Testimonials, BlogSection, Contact, Footer } from '@/components'
+import { ErrorBoundary, Header, MobileMenu, Hero, FeaturesSection, VideoSection, CareerSection, CommunitySection, PartnerLogos, NewsSection, Testimonials, BlogSection, Contact, Footer, CookieConsent } from '@/components'
 import { useScrollPosition } from '@/hooks/useScrollPosition'
 
 export default function Home() {
@@ -10,6 +10,24 @@ export default function Home() {
 
   const handleMobileMenuToggle = () => setIsMobileMenuOpen(true)
   const handleMobileMenuClose = () => setIsMobileMenuOpen(false)
+
+  const handleAcceptAllCookies = () => {
+    // Enable all cookies
+    console.log('All cookies accepted')
+    // Here you would typically enable analytics, marketing, etc.
+  }
+
+  const handleAcceptSelectedCookies = (cookies: string[]) => {
+    // Enable only selected cookies
+    console.log('Selected cookies:', cookies)
+    // Here you would enable only the selected cookie types
+  }
+
+  const handleDeclineCookies = () => {
+    // Disable non-essential cookies
+    console.log('Cookies declined')
+    // Here you would disable analytics, marketing, etc.
+  }
 
   return (
     <ErrorBoundary>
@@ -34,7 +52,18 @@ export default function Home() {
         <Testimonials />   
         <BlogSection />       
         <Contact />
+        {/* <Products />        */}
+        {/* <Solutions />        */}
+        {/* <Stats />         */}
+        {/* <Features />     */}
         <Footer />
+
+        {/* Cookie Consent Popup */}
+        <CookieConsent
+          onAcceptAll={handleAcceptAllCookies}
+          onAcceptSelected={handleAcceptSelectedCookies}
+          onDecline={handleDeclineCookies}
+        />
       </main>
     </ErrorBoundary>
   )
