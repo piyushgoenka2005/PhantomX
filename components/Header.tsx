@@ -41,18 +41,18 @@ export default function Header({ isScrolled, onMobileMenuToggle }: HeaderProps) 
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center space-x-3 lg:space-x-4">
-            <a
-              href="#login"
+            <Link
+              href="/auth/login"
               className="text-white hover:text-lime-400 transition-colors font-medium text-sm lg:text-base"
             >
               Login
-            </a>
-            <a
-              href="#get-started"
+            </Link>
+            <Link
+              href="/auth/signup"
               className="bg-lime-500 hover:bg-lime-600 text-white px-4 lg:px-6 py-2 rounded-lg font-semibold transition-colors flex items-center text-sm lg:text-base"
             >
               Get Started
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

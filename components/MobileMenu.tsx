@@ -189,8 +189,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 <div className="space-y-3">
                   <h3 className="text-gray-300 font-semibold text-sm uppercase tracking-wider">Quick Actions</h3>
                   <div className="space-y-2">
-                    <a
-                      href="#login"
+                    <Link
+                      href="/auth/login"
                       onClick={onClose}
                       className="flex items-center justify-between p-4 rounded-xl bg-gray-800/30 hover:bg-gray-800/60 border border-gray-700/30 hover:border-gray-600/50 transition-all duration-200"
                     >
@@ -199,16 +199,16 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                         <span className="text-white font-medium">Login</span>
                       </div>
                       <ArrowRight className="w-4 h-4 text-gray-400" />
-                    </a>
+                    </Link>
                     
-                    <a
-                      href="#get-started"
+                    <Link
+                      href="/auth/signup"
                       onClick={onClose}
                       className="flex items-center justify-center p-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
                     >
                       <span>Get Started</span>
                       <ArrowRight className="w-4 h-4 ml-2" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
 

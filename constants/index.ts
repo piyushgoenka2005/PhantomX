@@ -24,11 +24,19 @@ import type {
 export const NAV_ITEMS: NavItem[] = [
   { name: 'Products', href: '/products' },
   { name: 'Solutions', href: '/solutions' },
-  { name: 'Pricing', href: '#pricing' },
-  { name: 'Resources', href: '#resources' },
-  { name: 'Company', href: '/company' },
-  { name: 'Business', href: '#business' }
+  { name: 'Pricing', href: '/pricing' },
+  { name: 'Resources', href: '/resources' },
+  { name: 'Business', href: '/business' },
+  { name: 'Company', href: '/company' }
 ];
+
+// Auth Routes
+export const AUTH_ROUTES = {
+  login: '/auth/login',
+  signup: '/auth/signup',
+  forgotPassword: '/auth/forgot-password',
+  resetPassword: '/auth/reset-password'
+};
 
 // Feature Constants
 export const FEATURES: Feature[] = [
